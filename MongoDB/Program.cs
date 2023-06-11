@@ -12,6 +12,8 @@ Person objPerson = new Person
 
 objDB.InsertRecord("Users", objPerson);
 objDB.LoadRecords<Person>("Users");
+
+objDB.DeleteRecord<Person>("Users", new Guid("df183936-302f-4b50-89b3-782785caf0c1"));
 Console.ReadLine();
 
 

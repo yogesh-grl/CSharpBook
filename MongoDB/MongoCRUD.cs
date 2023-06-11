@@ -30,5 +30,34 @@ namespace MongoDB
             var data = collections.Find(new BsonDocument()).ToList();
         }
 
+        public void LoadRecordByID<T>(string table, Guid ID)
+        {
+            var collections = db.GetCollection<T>(table);
+            var filter = Builders<T>.Filter.Eq("Id", ID);
+            var data = collections.Find(filter).ToList();
+        }
+
+        public void Upsert<T>(string table, Guid Id, T record)
+        {
+            var collection = db.GetCollection<T>(table);
+            collection.ReplaceOne(new BsonDocument("_id", Id),
+                record,
+                new UpdateOptions { IsUpsert = true });
+        }
+
+        public void DeleteRecord<T>(string table, Guid id)
+        {
+            var collectionb = db.GetCollection<T>(table);
+            collectionb.DeleteOne(new BsonDocument("_id", id));
+
+            LoadRecords<T>(table);
+        }
+
+        public void InsertMany<T>(string table, List<T> LsRecords)
+        {
+            var collection = db.GetCollection<T>(table);
+            collection.InsertMany(LsRecords);
+        }
+
     }
 }
