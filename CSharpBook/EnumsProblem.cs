@@ -14,7 +14,8 @@ namespace CSharpBook
             Inheritance = 2,
             Interface = 3,
             Delegates = 4,
-            MultiThreading = 5
+            MultiThreading = 5,
+            AsyncAwait = 6
         }
     }
 }

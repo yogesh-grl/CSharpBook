@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharp\\CSharpBook\\CSharpBook\\CSharpBook.csproj": {}
+    "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharpBook\\CSharpBook\\CSharpBook.csproj": {}
   },
   "projects": {
-    "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharp\\CSharpBook\\CSharpBook\\CSharpBook.csproj": {
+    "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharpBook\\CSharpBook\\CSharpBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharp\\CSharpBook\\CSharpBook\\CSharpBook.csproj",
+        "projectUniqueName": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharpBook\\CSharpBook\\CSharpBook.csproj",
         "projectName": "CSharpBook",
-        "projectPath": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharp\\CSharpBook\\CSharpBook\\CSharpBook.csproj",
+        "projectPath": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharpBook\\CSharpBook\\CSharpBook.csproj",
         "packagesPath": "C:\\Users\\Yogesh\\.nuget\\packages\\",
-        "outputPath": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharp\\CSharpBook\\CSharpBook\\obj\\",
+        "outputPath": "E:\\Source Code\\GIT\\Yogesh\\Playground\\CSharpBook\\CSharpBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yogesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
