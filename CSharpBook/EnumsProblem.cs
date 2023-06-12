@@ -15,7 +15,8 @@ namespace CSharpBook
             Interface = 3,
             Delegates = 4,
             MultiThreading = 5,
-            AsyncAwait = 6
+            AsyncAwait = 6,
+            Events = 7
         }
     }
 }

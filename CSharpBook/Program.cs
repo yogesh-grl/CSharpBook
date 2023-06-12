@@ -2,7 +2,7 @@
 using CSharpBook;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.AsyncAwait;
+Problem problem = Problem.Events;
 
 if (problem == Problem.AbstractClass)
 {
@@ -23,6 +23,11 @@ else if (problem == Problem.AsyncAwait)
 {
     AsyncAwaitExample asyncAwaitExample = new AsyncAwaitExample();
     asyncAwaitExample.MainMethod();
+}
+else if (problem == Problem.Events)
+{
+    EventExample eventsExample = new EventExample();
+    eventsExample.MainMethod();
 }
 else
 {
