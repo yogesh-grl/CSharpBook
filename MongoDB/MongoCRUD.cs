@@ -45,6 +45,7 @@ namespace MongoDB
                 new UpdateOptions { IsUpsert = true });
         }
 
+
         public void DeleteRecord<T>(string table, Guid id)
         {
             var collectionb = db.GetCollection<T>(table);
@@ -58,6 +59,8 @@ namespace MongoDB
             var collection = db.GetCollection<T>(table);
             collection.InsertMany(LsRecords);
         }
+
+
 
     }
 }

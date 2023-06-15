@@ -16,7 +16,8 @@ namespace CSharpBook
             Delegates = 4,
             MultiThreading = 5,
             AsyncAwait = 6,
-            Events = 7
+            Events = 7,
+            LooseCouplingVsTightCoupling
         }
     }
 }
