@@ -47,8 +47,6 @@ namespace CSharpBook.SOLID
         }
     }
 
-
-
     internal class DependencyInversionPrinciple
     {
         IMessage objSMS;
