@@ -17,7 +17,13 @@ namespace CSharpBook
             MultiThreading = 5,
             AsyncAwait = 6,
             Events = 7,
-            LooseCouplingVsTightCoupling
+            LooseCouplingVsTightCoupling,
+
+            SOLID_S,
+            SOLID_O,
+            SOLID_L,
+            SOLID_I,
+            SOLID_D,
         }
     }
 }
