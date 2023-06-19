@@ -8,6 +8,16 @@ namespace CSharpBook
 {
     public class EnumsProblem
     {
+        public enum SOLIDPrinciples
+        {
+            SOLID_S,
+            SOLID_O,
+            SOLID_L,
+            SOLID_I,
+            SOLID_D,
+        }
+
+
         public enum Problem
         {
             AbstractClass = 1,
@@ -18,12 +28,8 @@ namespace CSharpBook
             AsyncAwait = 6,
             Events = 7,
             LooseCouplingVsTightCoupling,
+            SOLIDDesignPrinciples,
 
-            SOLID_S,
-            SOLID_O,
-            SOLID_L,
-            SOLID_I,
-            SOLID_D,
         }
     }
 }
