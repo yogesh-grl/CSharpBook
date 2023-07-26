@@ -3,7 +3,24 @@ using CSharpBook;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Events;
+Problem problem = Problem.LINQ;
+
+if (problem == Problem.LINQ)
+{
+    LINQ lINQ = new LINQ();
+    LINQEnums subLINQProblem = LINQEnums.None;
+
+    if (subLINQProblem == LINQEnums.Query)
+        lINQ.QueryExpression();
+    if (subLINQProblem == LINQEnums.ProjectionOperation)
+        lINQ.ProjectionOperation();
+}
+
+if (problem == Problem.Workout)
+{
+    WorkOut objWorkOut = new WorkOut();
+    objWorkOut.WorkoutSample3();
+}
 
 if (problem == Problem.AbstractClass)
 {

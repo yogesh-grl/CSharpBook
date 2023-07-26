@@ -17,6 +17,13 @@ namespace CSharpBook
             SOLID_D,
         }
 
+        public enum LINQEnums
+        {
+            Query,
+            ProjectionOperation,
+            None
+        }
+
 
         public enum Problem
         {
@@ -29,7 +36,8 @@ namespace CSharpBook
             Events = 7,
             LooseCouplingVsTightCoupling,
             SOLIDDesignPrinciples,
-
+            Workout,
+            LINQ
         }
     }
 }

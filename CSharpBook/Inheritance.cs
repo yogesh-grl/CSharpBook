@@ -35,7 +35,6 @@ namespace CSharpBook
         {
             Console.WriteLine("Dervied1 Class - Method 3");
         }
-
         public new void Method2()
         {
             Console.WriteLine("Dervied1 Class - Method 2");
