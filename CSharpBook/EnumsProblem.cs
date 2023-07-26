@@ -29,7 +29,8 @@ namespace CSharpBook
             Events = 7,
             LooseCouplingVsTightCoupling,
             SOLIDDesignPrinciples,
-
+            Workout,
+            LINQ
         }
     }
 }

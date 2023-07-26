@@ -95,7 +95,6 @@ namespace CSharpBook
 
         public void MainMethod()
         {
-
             //Vehicle vehicle = new Vehicle(1, "Vehicle"); // we cannt create the instance for the abstract class :: Becoz no implementation for the members 
 
             Suzuki objSuzuki = new Suzuki(1, "Suzuki");
