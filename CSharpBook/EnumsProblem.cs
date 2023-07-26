@@ -21,6 +21,8 @@ namespace CSharpBook
         {
             Query,
             ProjectionOperation,
+            SortingData,
+            SetOperation,
             None
         }
 
