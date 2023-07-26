@@ -17,6 +17,13 @@ namespace CSharpBook
             SOLID_D,
         }
 
+        public enum LINQEnums
+        {
+            Query,
+            ProjectionOperation,
+            None
+        }
+
 
         public enum Problem
         {

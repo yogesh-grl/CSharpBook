@@ -8,8 +8,12 @@ Problem problem = Problem.LINQ;
 if (problem == Problem.LINQ)
 {
     LINQ lINQ = new LINQ();
-    lINQ.QueryExpression();
-    lINQ.ProjectionOperation();
+    LINQEnums subLINQProblem = LINQEnums.None;
+
+    if (subLINQProblem == LINQEnums.Query)
+        lINQ.QueryExpression();
+    if (subLINQProblem == LINQEnums.ProjectionOperation)
+        lINQ.ProjectionOperation();
 }
 
 if (problem == Problem.Workout)
