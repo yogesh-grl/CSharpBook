@@ -8,12 +8,16 @@ Problem problem = Problem.LINQ;
 if (problem == Problem.LINQ)
 {
     LINQ lINQ = new LINQ();
-    LINQEnums subLINQProblem = LINQEnums.None;
+    LINQEnums subLINQProblem = LINQEnums.SetOperation;
 
     if (subLINQProblem == LINQEnums.Query)
         lINQ.QueryExpression();
     if (subLINQProblem == LINQEnums.ProjectionOperation)
         lINQ.ProjectionOperation();
+    if (subLINQProblem == LINQEnums.SortingData)
+        lINQ.SortingData();
+    if (subLINQProblem == LINQEnums.SetOperation)
+        lINQ.SetOperation();
 }
 
 if (problem == Problem.Workout)
