@@ -32,7 +32,7 @@ namespace CSharpBook
         }
 
         /// <summary>
-        /// Query Expression
+        /// Query Expression -
         /// Where | typeOf
         /// </summary>
         public void QueryExpression()
@@ -44,7 +44,7 @@ namespace CSharpBook
         }
 
         /// <summary>
-        /// Projection Operation
+        /// Projection Operation -
         /// Select | SelectMany | Zip
         /// </summary>
         public void ProjectionOperation()
@@ -67,7 +67,7 @@ namespace CSharpBook
         }
 
         /// <summary>
-        ///Sorting Operation
+        ///Sorting Operation -
         ///OrderBy | OrderBy descending | reverse 
         /// </summary>
         public void SortingData()
@@ -88,8 +88,8 @@ namespace CSharpBook
         }
 
         /// <summary>
-        /// Set Operation
-        /// Distinct | DistinctBy
+        /// Set Operation -
+        /// Distinct | DistinctBy | 
         /// Union | UnionBy
         /// Intersect | IntersectBy 
         /// </summary>
@@ -104,6 +104,7 @@ namespace CSharpBook
             IEnumerable<string> updatedPlanet = from planet in Planet.Distinct()
                                                 select planet;
             IterateGeneric(updatedPlanet);
+
             //DisticntBy
             List<PlanetClass> planetClasses = new List<PlanetClass>();
             planetClasses.Add(new PlanetClass() { Name = "Mercury", Type = PlanetTye.Gas });
@@ -114,6 +115,19 @@ namespace CSharpBook
             IEnumerable<PlanetClass> planetClasses1 = from planet in planetClasses.DistinctBy(x => x.Type)
                                                       select planet;
             IterateGeneric(planetClasses1);
+
+            List<string> AnotherPlanet = new List<string>()
+            {
+                 "Venus", "Jupiter", "Earth", "Mercury", "Mars"
+            };
+
+
+            //Intersect
+            IEnumerable<string> updatePlanetIntersect = Planet.Intersect(AnotherPlanet);
+
+
+            //Union
+            IEnumerable<string> updatePlanetUnion = Planet.Union(AnotherPlanet);
         }
     }
 
