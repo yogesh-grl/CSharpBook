@@ -24,6 +24,7 @@ namespace CSharpBook
             SortingData,
             SetOperation,
             Join,
+            Grup,
             None
         }
 

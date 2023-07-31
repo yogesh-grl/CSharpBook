@@ -164,11 +164,30 @@ namespace CSharpBook
                                  select new { EmployeName = empl.Name, DepartmentName = dept?.DepName ?? "No Department" };
 
             var RightJoinResult = from dept in departments
-                                 join emp in employees on dept.DepID equals emp.EmployeeDepID into employeeGrup
-                                 from emp in employeeGrup.DefaultIfEmpty()
-                                 select new { DepartmentName = dept.DepName , EmployeeDepID = emp?.EmployeeDepID ?? -1};
+                                  join emp in employees on dept.DepID equals emp.EmployeeDepID into employeeGrup
+                                  from emp in employeeGrup.DefaultIfEmpty()
+                                  select new { DepartmentName = dept.DepName, EmployeeDepID = emp?.EmployeeDepID ?? -1 };
 
         }
+
+        public void Grup()
+        {
+            List<Employee> employees = new List<Employee>()
+            {
+
+                new Employee(){Name= "Anand", EmployeeID= 1, EmployeeDepID = 1},
+                new Employee() {Name= "Balaji", EmployeeID= 2, EmployeeDepID = 2},
+                new Employee() {Name= "Gokul", EmployeeID= 3 , EmployeeDepID = 2},
+                new Employee() {Name= "Sai", EmployeeID= 4 , EmployeeDepID = 3} ,
+                new Employee() {Name= "Yogesh", EmployeeID= 5, EmployeeDepID = 2},
+                new Employee() {Name= "Mannan", EmployeeID= 5, EmployeeDepID = 4}
+            };
+
+
+            var grupEmployee = (from emp in employees
+                                group emp by emp.EmployeeDepID).ToList();
+        }
+
     }
 
 
