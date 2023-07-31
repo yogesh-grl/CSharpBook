@@ -23,7 +23,17 @@ namespace CSharpBook
             ProjectionOperation,
             SortingData,
             SetOperation,
+            Join,
             None
+        }
+
+
+        public enum LINQJoins
+        {
+            InnerJoin,
+            OuterJoin,
+            LeftJoin,
+            RightJoin
         }
 
 
