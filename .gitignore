@@ -2,3 +2,6 @@
 *.vsidx
 *.vsidx
 *.dll
+.vs/CSharpBook/v17/.suo
+*.1
+*.dll

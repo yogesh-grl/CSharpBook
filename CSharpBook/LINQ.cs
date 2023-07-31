@@ -129,7 +129,82 @@ namespace CSharpBook
             //Union
             IEnumerable<string> updatePlanetUnion = Planet.Union(AnotherPlanet);
         }
+
+        /// <summary>
+        /// Joins
+        /// </summary>
+        public void Joins()
+        {
+            List<Employee> employees = new List<Employee>()
+            {
+                new Employee(){Name= "Anand", EmployeeID= 1, EmployeeDepID = 1},
+                new Employee() {Name= "Balaji", EmployeeID= 2, EmployeeDepID = 2},
+                new Employee() {Name= "Gokul", EmployeeID= 3 , EmployeeDepID = 2},
+                new Employee() {Name= "Sai", EmployeeID= 4 , EmployeeDepID = 3} ,
+                new Employee() {Name= "Yogesh", EmployeeID= 5, EmployeeDepID = 2},
+                new Employee() {Name= "Mannan", EmployeeID= 5, EmployeeDepID = 4}
+            };
+
+
+            List<Department> departments = new List<Department>()
+            {
+                new Department(){DepName = "FW", DepID= 1},
+                new Department(){DepName = "SW", DepID= 2},
+                new Department(){DepName = "QA", DepID= 3},
+                new Department(){DepName = "None", DepID= 5}
+            };
+
+            var InnerJoinResult = from empl in employees
+                                  join dept in departments on empl.EmployeeDepID equals dept.DepID
+                                  select new { EmployeName = empl.Name, DepartmentName = dept.DepName };
+
+            var LeftJoinResult = from empl in employees
+                                 join dept in departments on empl.EmployeeDepID equals dept.DepID into deptGrup
+                                 from dept in deptGrup.DefaultIfEmpty()
+                                 select new { EmployeName = empl.Name, DepartmentName = dept?.DepName ?? "No Department" };
+
+            var RightJoinResult = from dept in departments
+                                  join emp in employees on dept.DepID equals emp.EmployeeDepID into employeeGrup
+                                  from emp in employeeGrup.DefaultIfEmpty()
+                                  select new { DepartmentName = dept.DepName, EmployeeDepID = emp?.EmployeeDepID ?? -1 };
+
+        }
+
+        public void Grup()
+        {
+            List<Employee> employees = new List<Employee>()
+            {
+
+                new Employee(){Name= "Anand", EmployeeID= 1, EmployeeDepID = 1},
+                new Employee() {Name= "Balaji", EmployeeID= 2, EmployeeDepID = 2},
+                new Employee() {Name= "Gokul", EmployeeID= 3 , EmployeeDepID = 2},
+                new Employee() {Name= "Sai", EmployeeID= 4 , EmployeeDepID = 3} ,
+                new Employee() {Name= "Yogesh", EmployeeID= 5, EmployeeDepID = 2},
+                new Employee() {Name= "Mannan", EmployeeID= 5, EmployeeDepID = 4}
+            };
+
+
+            var grupEmployee = (from emp in employees
+                                group emp by emp.EmployeeDepID).ToList();
+        }
+
     }
+
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public int EmployeeID { get; set; }
+        public int EmployeeDepID { get; set; }
+    }
+
+
+    public class Department
+    {
+        public string DepName { get; set; }
+        public int DepID { get; set; }
+    }
+
 
     public enum PlanetTye
     {
