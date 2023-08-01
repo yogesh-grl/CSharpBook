@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpBook.SOLID;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,10 @@ namespace CSharpBook
             IEnumerable<string> strings = from word in words
                                           where word.Length > 5
                                           select word;
+            //int count = strings.Count();
+
+            List<string> lsStr = words.Where(s => s.Length > 5).ToList();
+
             IterateGeneric(strings);
         }
 
@@ -158,16 +163,17 @@ namespace CSharpBook
                                   join dept in departments on empl.EmployeeDepID equals dept.DepID
                                   select new { EmployeName = empl.Name, DepartmentName = dept.DepName };
 
-            var LeftJoinResult = from empl in employees
-                                 join dept in departments on empl.EmployeeDepID equals dept.DepID into deptGrup
-                                 from dept in deptGrup.DefaultIfEmpty()
-                                 select new { EmployeName = empl.Name, DepartmentName = dept?.DepName ?? "No Department" };
+            var leftJoinQuery = from dept in departments
+                                join emp in employees on dept.DepID equals emp.EmployeeDepID into empGroup
+                                from emp in empGroup.DefaultIfEmpty()
+                                select new { DepartmentName = dept.DepName, EmployeeName = emp?.Name ?? "No employee" };
 
-            var RightJoinResult = from dept in departments
-                                  join emp in employees on dept.DepID equals emp.EmployeeDepID into employeeGrup
-                                  from emp in employeeGrup.DefaultIfEmpty()
-                                  select new { DepartmentName = dept.DepName, EmployeeDepID = emp?.EmployeeDepID ?? -1 };
+            var rightJoinQuery = from emp in employees
+                                 join dept in departments on emp.EmployeeDepID equals dept.DepID into deptGroup
+                                 from dept in deptGroup.DefaultIfEmpty()
+                                 select new { EmployeeName = emp.Name, DepartmentName = dept?.DepName ?? "No department" };
 
+            //var fullOuterJoinQuery = rightJoinQuery.Union(leftJoinQuery);
         }
 
         public void Grup()
