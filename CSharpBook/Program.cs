@@ -1,9 +1,16 @@
 ﻿
 using CSharpBook;
+using CSharpBook.Design_Patterns;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.LINQ;
+Problem problem = Problem.Inheritance;
+
+if (problem == Problem.DesignPatterns)
+{
+    Singleton singleton = Singleton.GetInstance();
+}
+
 
 if (problem == Problem.LINQ)
 {
@@ -36,6 +43,7 @@ if (problem == Problem.AbstractClass)
 else if (problem == Problem.Inheritance)
 {
     InheritanceExample inheritanceExample = new InheritanceExample();
+    
     inheritanceExample.MainMethod();
 }
 else if (problem == Problem.Delegates)

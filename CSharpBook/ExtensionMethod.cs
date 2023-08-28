@@ -23,5 +23,17 @@ namespace CSharpBook
             return str.ToString() + "Extension";
         }
 
+        public static IEnumerable<T> CustomerFilter<T>(this IEnumerable<T> Source, Func<T, bool> predicate)
+        {
+
+            foreach (T source in Source)
+            {
+                if (predicate(source))
+                {
+                    yield return source;
+                }
+            }
+        }
+
     }
 }
