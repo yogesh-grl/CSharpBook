@@ -47,10 +47,11 @@ namespace CSharpBook
             MultiThreading = 5,
             AsyncAwait = 6,
             Events = 7,
-            LooseCouplingVsTightCoupling,
-            SOLIDDesignPrinciples,
-            Workout,
-            LINQ
+            LooseCouplingVsTightCoupling = 8,
+            SOLIDDesignPrinciples = 9,
+            Workout = 10,
+            LINQ = 11,
+            DesignPatterns = 12
         }
     }
 }

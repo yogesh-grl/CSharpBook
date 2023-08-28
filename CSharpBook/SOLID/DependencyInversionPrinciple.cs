@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace CSharpBook.SOLID
 {
 
+    // Abstractions
     interface IMessage
     {
         void SendMessage();
     }
 
-
+    // Concrete Implementations
     class SendMail : IMessage
     {
         public SendMail() { }
@@ -33,6 +34,7 @@ namespace CSharpBook.SOLID
         }
     }
 
+    // High-Level Module
     class Notification
     {
         IMessage _objMsg;

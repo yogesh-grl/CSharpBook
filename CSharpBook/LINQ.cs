@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,6 +91,7 @@ namespace CSharpBook
             IEnumerable<string> orderByDecSample = from word in lsStr
                                                    orderby word descending
                                                    select word;
+
             IterateGeneric(orderByDecSample);
         }
 
@@ -129,7 +132,6 @@ namespace CSharpBook
 
             //Intersect
             IEnumerable<string> updatePlanetIntersect = Planet.Intersect(AnotherPlanet);
-
 
             //Union
             IEnumerable<string> updatePlanetUnion = Planet.Union(AnotherPlanet);
@@ -194,34 +196,46 @@ namespace CSharpBook
                                 group emp by emp.EmployeeDepID).ToList();
         }
 
+
+        public void CustomeFilterExample()
+        {
+            List<int> lsInt = new List<int>()
+            {
+                1,2, 3, 4,
+            };
+
+            var filterData = lsInt.CustomerFilter(x => x % 2 == 0);
+
+        }
+
+
+
+
+        public class Employee
+        {
+            public string Name { get; set; }
+            public int EmployeeID { get; set; }
+            public int EmployeeDepID { get; set; }
+        }
+
+
+        public class Department
+        {
+            public string DepName { get; set; }
+            public int DepID { get; set; }
+        }
+
+
+        public enum PlanetTye
+        {
+            Gas,
+            Liquid,
+            Rock
+        }
+
+        public class PlanetClass
+        {
+            public string Name { get; set; }
+            public PlanetTye Type { get; set; }
+        }
     }
-
-
-    public class Employee
-    {
-        public string Name { get; set; }
-        public int EmployeeID { get; set; }
-        public int EmployeeDepID { get; set; }
-    }
-
-
-    public class Department
-    {
-        public string DepName { get; set; }
-        public int DepID { get; set; }
-    }
-
-
-    public enum PlanetTye
-    {
-        Gas,
-        Liquid,
-        Rock
-    }
-
-    public class PlanetClass
-    {
-        public string Name { get; set; }
-        public PlanetTye Type { get; set; }
-    }
-}

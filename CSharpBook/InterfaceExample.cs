@@ -9,7 +9,13 @@ namespace CSharpBook
 
     interface IAnimal
     {
+        //int a = 0; will thrown error        
         void Sound();
+
+        public void Data()
+        {
+
+        }
 
         virtual void Nature()
         {
