@@ -9,21 +9,27 @@ namespace CSharpBook.Design_Patterns
 {
     public class Singleton
     {
-        private static Singleton singleton = null;
+        static object lockObj = new object();
 
-        private object objLock = new object();
-
+        static Singleton Instance;
         private Singleton()
         {
+
         }
 
         public static Singleton GetInstance()
         {
-            if (singleton == null)
+            if (Instance == null)
             {
-                singleton = new Singleton();
+                lock (lockObj)
+                {
+                    if (Instance == null)
+                    {
+                        Instance = new Singleton();
+                    }
+                }
             }
-            return singleton;
+            return Instance;
         }
     }
 }
