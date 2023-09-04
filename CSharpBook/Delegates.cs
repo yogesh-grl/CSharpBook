@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CSharpBook
 {
 
+    #region Delegate without Param
     public class Calculation
     {
         public Calculation()
@@ -47,4 +48,40 @@ namespace CSharpBook
             objSampleDelegate.Invoke();
         }
     }
+
+    #endregion
+
+    #region Delegate with Param 
+
+    public class Cal
+    {
+        public Cal()
+        {
+        }
+
+        public void Addition(int a, int b)
+        {
+            Console.Write(a + b);
+        }
+    }
+
+
+    public delegate void SampleDelegateWithParam(int num1, int num2);
+
+    public class DelegatesWithParam
+    {
+        Cal cal;
+        public DelegatesWithParam()
+        {
+            cal = new Cal();
+        }
+
+        public void MainMethod()
+        {
+            SampleDelegateWithParam delegateObj = new SampleDelegateWithParam(cal.Addition);
+            delegateObj.Invoke(1, 2);
+        }
+    }
+
+    #endregion
 }

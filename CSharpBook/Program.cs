@@ -1,18 +1,17 @@
 ﻿
 using CSharpBook;
 using CSharpBook.Design_Patterns;
+using CSharpBook.OOPS;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Inheritance;
+Problem problem = Problem.Overloading;
 
 if (problem == Problem.DesignPatterns)
 {
     Singleton singleton = Singleton.GetInstance();
 }
-
-
-if (problem == Problem.LINQ)
+else if (problem == Problem.LINQ)
 {
     LINQ lINQ = new LINQ();
     LINQEnums subLINQProblem = LINQEnums.Grup;
@@ -28,14 +27,12 @@ if (problem == Problem.LINQ)
     if (subLINQProblem == LINQEnums.Grup)
         lINQ.Grup();
 }
-
-if (problem == Problem.Workout)
+else if (problem == Problem.Workout)
 {
     WorkOut objWorkOut = new WorkOut();
     objWorkOut.WorkoutSample3();
 }
-
-if (problem == Problem.AbstractClass)
+else if (problem == Problem.AbstractClass)
 {
     AbstractClassExample abstractClassExample = new AbstractClassExample();
     abstractClassExample.MainMethod();
@@ -43,18 +40,25 @@ if (problem == Problem.AbstractClass)
 else if (problem == Problem.Inheritance)
 {
     InheritanceExample inheritanceExample = new InheritanceExample();
-    
+
     inheritanceExample.MainMethod();
 }
 else if (problem == Problem.Delegates)
 {
     Delegates delegates = new Delegates();
     delegates.MainMethod();
+
+    DelegatesWithParam delegatesWithParam = new DelegatesWithParam();
+    delegatesWithParam.MainMethod();
 }
 else if (problem == Problem.AsyncAwait)
 {
     AsyncAwaitExample asyncAwaitExample = new AsyncAwaitExample();
     asyncAwaitExample.MainMethod();
+
+    asyncAwaitExample.TaskExample();
+
+    asyncAwaitExample.ExampleTaskCancellationToken();
 }
 else if (problem == Problem.Events)
 {
@@ -89,6 +93,11 @@ else if (problem == Problem.SOLIDDesignPrinciples)
         dependencyObj.MainMethod();
     }
 
+}
+else if (problem == Problem.Overloading)
+{
+    Overloading objOverLoading = new Overloading();
+    objOverLoading.MainMethod();
 }
 else
 {

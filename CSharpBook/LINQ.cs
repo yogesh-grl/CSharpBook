@@ -207,35 +207,34 @@ namespace CSharpBook
             var filterData = lsInt.CustomerFilter(x => x % 2 == 0);
 
         }
-
-
-
-
-        public class Employee
-        {
-            public string Name { get; set; }
-            public int EmployeeID { get; set; }
-            public int EmployeeDepID { get; set; }
-        }
-
-
-        public class Department
-        {
-            public string DepName { get; set; }
-            public int DepID { get; set; }
-        }
-
-
-        public enum PlanetTye
-        {
-            Gas,
-            Liquid,
-            Rock
-        }
-
-        public class PlanetClass
-        {
-            public string Name { get; set; }
-            public PlanetTye Type { get; set; }
-        }
     }
+
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public int EmployeeID { get; set; }
+        public int EmployeeDepID { get; set; }
+    }
+
+
+    public class Department
+    {
+        public string DepName { get; set; }
+        public int DepID { get; set; }
+    }
+
+
+    public enum PlanetTye
+    {
+        Gas,
+        Liquid,
+        Rock
+    }
+
+    public class PlanetClass
+    {
+        public string Name { get; set; }
+        public PlanetTye Type { get; set; }
+    }
+}

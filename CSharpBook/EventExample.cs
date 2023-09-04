@@ -17,14 +17,12 @@ namespace CSharpBook
 
     public class Maths
     {
-        public delegate void SampleDeleagte();
-
         //Event without Args 
+        public delegate void SampleDeleagte();        
         public event SampleDeleagte SampleEvent;
 
         //Event with Args 
         public delegate void SampleDelegateWithArgs(bool status);
-
         public event SampleDelegateWithArgs SampleEventWithArgs;
 
         // Event with custome Args
@@ -44,6 +42,7 @@ namespace CSharpBook
         public void Addition()
         {
             SampleEvent();
+
             SampleEventWithArgs(true);
 
             CustomeArgsobj = new CustomeArgs();

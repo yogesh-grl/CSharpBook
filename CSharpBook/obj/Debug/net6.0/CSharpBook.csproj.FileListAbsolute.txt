@@ -18,7 +18,6 @@ E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\bin\Debug\net6.0\CSha
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\bin\Debug\net6.0\CSharpBook.runtimeconfig.json
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\bin\Debug\net6.0\CSharpBook.dll
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\bin\Debug\net6.0\CSharpBook.pdb
-E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\obj\Debug\net6.0\CSharpBook.csproj.AssemblyReference.cache
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\obj\Debug\net6.0\CSharpBook.GeneratedMSBuildEditorConfig.editorconfig
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\obj\Debug\net6.0\CSharpBook.AssemblyInfoInputs.cache
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\CSharpBook\obj\Debug\net6.0\CSharpBook.AssemblyInfo.cs

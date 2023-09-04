@@ -109,5 +109,51 @@ namespace CSharpBook
             Console.WriteLine("Async Cooking");
             AsyncCooking();
         }
+
+        public void TaskExample()
+        {
+            Task task = Task.Run(() =>
+            {
+                Console.WriteLine("Task Started");
+                Console.WriteLine("Task Running...");
+                Task.Delay(5000);
+            });
+            task.Wait(); // this will make the task to complete its execution
+
+            Console.WriteLine("Completed");
+        }
+
+        public void ExampleTaskCancellationToken()
+        {
+            try
+            {
+                using (var cts = new CancellationTokenSource())
+                {
+                    Console.WriteLine("Starting....");
+                    Task newTask = new Task(() =>
+                    {
+                        while (!cts.Token.IsCancellationRequested)
+                        {
+                            Console.WriteLine("Task InProgress");
+                            Task.Delay(1000);
+                        }
+                    }, cts.Token);
+                    newTask.Start();
+
+                    Console.WriteLine("Press Enter to Stop the Task");
+                    Console.ReadLine();
+
+                    cts.Cancel();
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
     }
 }

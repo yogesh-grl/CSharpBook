@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace CSharpBook
+namespace CSharpBook.OOPS
 {
     public abstract class Vehicle
     {
         public int ID { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; }       
 
         public Vehicle(int iD, string name)
         {
