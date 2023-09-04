@@ -51,7 +51,8 @@ namespace CSharpBook
             SOLIDDesignPrinciples = 9,
             Workout = 10,
             LINQ = 11,
-            DesignPatterns = 12
+            DesignPatterns = 12,
+            Overloading =13
         }
     }
 }

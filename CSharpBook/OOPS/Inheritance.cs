@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBook
+namespace CSharpBook.OOPS
 {
 
     public class BaseClass
@@ -22,6 +22,16 @@ namespace CSharpBook
         {
             Console.WriteLine($"Base Class - Method 2");
         }
+
+        public virtual void MethodSample1()
+        {
+            Console.WriteLine($"Base Class - Method sample 1 ");
+        }
+
+        public virtual void MethodSample2()
+        {
+            Console.WriteLine($"Base Class - Method sample 2 ");
+        }
     }
 
 
@@ -31,14 +41,31 @@ namespace CSharpBook
         {
         }
 
-        public void Method3()
+        public override void MethodSample1()
         {
-            Console.WriteLine("Dervied1 Class - Method 3");
+            Console.WriteLine("Derived class - Method Sample 1");
         }
+
+        public new void MethodSample2()
+        {
+            Console.WriteLine("Derived class - Method Sample 2");
+        }
+
+        public void Method1()
+        {
+            Console.WriteLine("Derived class - Method 1");
+        }
+
         public new void Method2()
         {
             Console.WriteLine("Dervied1 Class - Method 2");
         }
+
+        public void Method3()
+        {
+            Console.WriteLine("Dervied1 Class - Method 3");
+        }
+
     }
 
     public class DerivedClass2 : BaseClass
@@ -83,6 +110,8 @@ namespace CSharpBook
             Console.WriteLine();
 
             BaseClass base1Class = new DerivedClass1();
+            base1Class.MethodSample1();
+            base1Class.MethodSample2();
             base1Class.Method1();
             base1Class.Method2();
             //base1Class.Method3(); it will throw error 
