@@ -5,7 +5,7 @@ using CSharpBook.OOPS;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Overloading;
+Problem problem = Problem.Threads;
 
 if (problem == Problem.DesignPatterns)
 {
@@ -98,6 +98,11 @@ else if (problem == Problem.Overloading)
 {
     Overloading objOverLoading = new Overloading();
     objOverLoading.MainMethod();
+}
+else if (problem == Problem.Threads)
+{
+    ThreadSample objThread = new ThreadSample();
+    objThread.MainMethod();
 }
 else
 {
