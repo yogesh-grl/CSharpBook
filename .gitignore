@@ -5,3 +5,5 @@
 .vs/CSharpBook/v17/.suo
 *.1
 *.dll
+*.pdb
+*.cache
