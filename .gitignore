@@ -7,3 +7,7 @@
 *.dll
 *.pdb
 *.cache
+*.editorconfig
+*.bin
+*.v2
+*.v2

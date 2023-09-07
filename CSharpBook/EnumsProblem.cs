@@ -54,7 +54,12 @@ namespace CSharpBook
             DesignPatterns = 12,
             Overloading = 13,
             Threads = 14,
+            LeetCode = 15
+        }
 
+        public enum LeetCodeSubProblem
+        {
+            BitManipulation = 1
         }
     }
 }

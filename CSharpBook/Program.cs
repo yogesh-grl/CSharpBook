@@ -1,11 +1,12 @@
 ﻿
 using CSharpBook;
 using CSharpBook.Design_Patterns;
+using CSharpBook.LeetCode;
 using CSharpBook.OOPS;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Threads;
+Problem problem = Problem.LeetCode;
 
 if (problem == Problem.DesignPatterns)
 {
@@ -103,6 +104,17 @@ else if (problem == Problem.Threads)
 {
     ThreadSample objThread = new ThreadSample();
     objThread.MainMethod();
+}
+else if (problem == Problem.LeetCode)
+{
+    LeetCodeSubProblem subProblem = LeetCodeSubProblem.BitManipulation;
+    if (subProblem == LeetCodeSubProblem.BitManipulation)
+    {
+        BitManipulation bitManipulation = new BitManipulation();
+        bitManipulation.AddBinary("11", "1");
+
+        bitManipulation.HammingWeight(00000000000000000000000000001011);
+    }
 }
 else
 {
