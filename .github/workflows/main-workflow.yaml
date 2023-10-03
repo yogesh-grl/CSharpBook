@@ -55,9 +55,9 @@ jobs:
       - name: Generate Release Notes
         run: echo "Generate release notes based on release tags."
 
-  # Add more steps for notifications, release note generation, or documentation updates as needed
-  - name: Notify Team on Release
-    run: echo "Release detected. Notify stakeholders."
+      # Additional steps for notifications, e.g., sending notifications to stakeholders
+      - name: Notify Team on Release
+        run: echo "Release detected. Notify stakeholders."
 
-  - name: Update Documentation
-    run: echo "Update project documentation."
+      - name: Update Documentation
+        run: echo "Update project documentation."
