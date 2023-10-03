@@ -25,9 +25,6 @@ jobs:
       - name: Install dotnet-format
         run: dotnet tool install -g dotnet-format
 
-      - name: Install dotnet-lint
-        run: dotnet tool install -g dotnet-lint
-
       - name: Validate C# coding standards
         run: |
           dotnet format --check
