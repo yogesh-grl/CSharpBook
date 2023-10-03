@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - '*'  # Track all branches, adjust as needed
+  workflow_dispatch:    
   release:
     types:
       - published  # Trigger on newly published releases
