@@ -1,0 +1,17 @@
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\OpenAI.exe
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\OpenAI.deps.json
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\OpenAI.runtimeconfig.json
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\OpenAI.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\OpenAI.pdb
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.csproj.AssemblyReference.cache
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.AssemblyInfoInputs.cache
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.AssemblyInfo.cs
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.csproj.CoreCompileInputs.cache
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.csproj.CopyComplete
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\refint\OpenAI.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.pdb
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\OpenAI.genruntimeconfig.cache
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\OpenAI\obj\Debug\net6.0\ref\OpenAI.dll
