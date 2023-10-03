@@ -22,10 +22,10 @@ jobs:
           dotnet-version: 3.1 # Choose the version you need
 
       - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format --version 5.3.0  # You can choose the version
+        run: dotnet tool install -g dotnet-format
 
       - name: Install dotnet-lint
-        run: dotnet tool install -g dotnet-lint --version 2.0.0  # You can choose the version
+        run: dotnet tool install -g dotnet-lint
 
       - name: Validate C# coding standards
         run: |
