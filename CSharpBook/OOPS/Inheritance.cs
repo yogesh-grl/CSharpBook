@@ -12,62 +12,49 @@ namespace CSharpBook.OOPS
         public BaseClass()
         {
         }
-
         public void Method1()
         {
             Console.WriteLine($"Base Class - Method 1");
         }
-
         public virtual void Method2()
         {
             Console.WriteLine($"Base Class - Method 2");
         }
-
         public virtual void MethodSample1()
         {
             Console.WriteLine($"Base Class - Method sample 1 ");
         }
-
         public virtual void MethodSample2()
         {
             Console.WriteLine($"Base Class - Method sample 2 ");
         }
     }
-
-
     public class DerivedClass1 : BaseClass
     {
         public DerivedClass1()
         {
         }
-
         public override void MethodSample1()
         {
             Console.WriteLine("Derived class - Method Sample 1");
         }
-
         public new void MethodSample2()
         {
             Console.WriteLine("Derived class - Method Sample 2");
         }
-
         public void Method1()
         {
             Console.WriteLine("Derived class - Method 1");
         }
-
         public new void Method2()
         {
             Console.WriteLine("Dervied1 Class - Method 2");
         }
-
         public void Method3()
         {
             Console.WriteLine("Dervied1 Class - Method 3");
         }
-
     }
-
     public class DerivedClass2 : BaseClass
     {
         public DerivedClass2()
@@ -84,14 +71,11 @@ namespace CSharpBook.OOPS
             Console.WriteLine("Dervied2 Class - Method 2");
         }
     }
-
-
     public class InheritanceExample
     {
         public InheritanceExample()
         {
         }
-
         public void MainMethod()
         {
             BaseClass baseClass = new BaseClass();

@@ -2,11 +2,12 @@
 using CSharpBook;
 using CSharpBook.Design_Patterns;
 using CSharpBook.LeetCode;
+using CSharpBook.LeetCode.ArrayOrString;
 using CSharpBook.OOPS;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.LeetCode;
+Problem problem = Problem.Inheritance;
 
 if (problem == Problem.DesignPatterns)
 {
@@ -107,13 +108,18 @@ else if (problem == Problem.Threads)
 }
 else if (problem == Problem.LeetCode)
 {
-    LeetCodeSubProblem subProblem = LeetCodeSubProblem.BitManipulation;
+    LeetCodeSubProblem subProblem = LeetCodeSubProblem.ArrayString;
     if (subProblem == LeetCodeSubProblem.BitManipulation)
     {
         BitManipulation bitManipulation = new BitManipulation();
         bitManipulation.AddBinary("11", "1");
 
         bitManipulation.HammingWeight(00000000000000000000000000001011);
+    }
+    else if (subProblem == LeetCodeSubProblem.ArrayString)
+    {
+        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        mergeSortedArray.Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6, }, 3);
     }
 }
 else

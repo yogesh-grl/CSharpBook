@@ -10,6 +10,7 @@ namespace CSharpBook.OOPS
     interface IAnimal
     {
         //int a = 0; will thrown error        
+
         void Sound();
 
         public void Data()

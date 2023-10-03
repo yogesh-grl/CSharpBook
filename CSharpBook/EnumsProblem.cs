@@ -59,7 +59,10 @@ namespace CSharpBook
 
         public enum LeetCodeSubProblem
         {
-            BitManipulation = 1
+            BitManipulation = 1,
+            ArrayString = 2,
+
+
         }
     }
 }
