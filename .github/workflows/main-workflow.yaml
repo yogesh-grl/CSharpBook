@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - '*'  # Track all branches, adjust as needed
+  workflow_dispatch:    
   release:
     types:
       - published  # Trigger on newly published releases
@@ -22,10 +23,7 @@ jobs:
           dotnet-version: 3.1 # Choose the version you need
 
       - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format --version 5.3.0  # You can choose the version
-
-      - name: Install dotnet-lint
-        run: dotnet tool install -g dotnet-lint --version 2.0.0  # You can choose the version
+        run: dotnet tool install -g dotnet-format
 
       - name: Validate C# coding standards
         run: |
@@ -55,9 +53,9 @@ jobs:
       - name: Generate Release Notes
         run: echo "Generate release notes based on release tags."
 
-  # Add more steps for notifications, release note generation, or documentation updates as needed
-  - name: Notify Team on Release
-    run: echo "Release detected. Notify stakeholders."
+      # Additional steps for notifications, e.g., sending notifications to stakeholders
+      - name: Notify Team on Release
+        run: echo "Release detected. Notify stakeholders."
 
-  - name: Update Documentation
-    run: echo "Update project documentation."
+      - name: Update Documentation
+        run: echo "Update project documentation."
