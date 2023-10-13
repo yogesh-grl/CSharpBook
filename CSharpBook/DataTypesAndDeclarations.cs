@@ -38,7 +38,7 @@ namespace CSharpBook
 
                 //string 
                 string sampleString = "Hello";
-
+                
                 //String Builder 
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.Append(sampleString);
