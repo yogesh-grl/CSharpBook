@@ -24,7 +24,7 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseMiddleware<SampleLoggingMiddelware>();
 
 //Custom Exception middelware example
-app.UseMiddleware<CustomDeveloperExceptionLogger>();
+//app.UseMiddleware<CustomDeveloperExceptionLogger>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

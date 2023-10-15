@@ -28,3 +28,6 @@ E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\re
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\WebAppSample.pdb
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\WebAppSample.genruntimeconfig.cache
 E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\ref\WebAppSample.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\WebAppSample.csproj.AssemblyReference.cache
+E:\Source Code\GIT\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net6.0\WebAppSample.csproj.CopyComplete
