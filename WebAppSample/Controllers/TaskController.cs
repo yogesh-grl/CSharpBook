@@ -4,12 +4,15 @@ using WebAppSample.Models.TaskModels;
 
 namespace WebAppSample.Controllers
 {
+    [Route("[controller]")]
     [Route("api/[controller]")]
     [ApiController]
     public class TaskController : ControllerBase
     {
 
         #region Get Methods
+
+        [Route("action")]
         [HttpGet("GetTaskDetails")]
         public ActionResult<List<TaskModel>> GetTaskDetails()
         {
@@ -25,7 +28,7 @@ namespace WebAppSample.Controllers
             }
         }
 
-        [HttpGet("GetTaskDetail/{TaskId}")]
+        [HttpGet("GetTaskDetail/{TaskId:int}")]
         public ActionResult<TaskModel> GetTaskDetail(int TaskId)
         {
             try

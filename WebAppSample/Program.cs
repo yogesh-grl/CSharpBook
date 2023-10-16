@@ -1,4 +1,5 @@
 using WebAppSample.Helper.Middleware;
+using WebAppSample.Helper.Middleware.TaskMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-    app.UseDeveloperExceptionPage();    
+    app.UseDeveloperExceptionPage();
 }
 
 // Middleware example 
@@ -25,6 +26,9 @@ app.UseMiddleware<SampleLoggingMiddelware>();
 
 //Custom Exception middelware example
 //app.UseMiddleware<CustomDeveloperExceptionLogger>();
+
+//Auth Middleware
+app.UseMiddleware<BasicAuthHandler>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
