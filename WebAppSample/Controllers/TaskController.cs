@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebAppSample.Helper.TaskHelper;
 using WebAppSample.Models.TaskModels;
 
 namespace WebAppSample.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [Route("api/[controller]")]
     [ApiController]
@@ -11,7 +13,7 @@ namespace WebAppSample.Controllers
     {
 
         #region Get Methods
-
+        //[AllowAnonymous]
         [Route("action")]
         [HttpGet("GetTaskDetails")]
         public ActionResult<List<TaskModel>> GetTaskDetails()

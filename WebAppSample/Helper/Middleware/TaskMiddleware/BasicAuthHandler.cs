@@ -36,7 +36,7 @@ namespace WebAppSample.Helper.Middleware.TaskMiddleware
                 }
                 else
                 {
-                    await _next(httpContext);
+                    //await _next(httpContext);
                 }
             }
             await _next(httpContext);
@@ -46,11 +46,11 @@ namespace WebAppSample.Helper.Middleware.TaskMiddleware
         {
             if (UserName != "Yogesh" || Pwd != "Password")
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
 
