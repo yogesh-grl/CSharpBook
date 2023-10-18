@@ -8,6 +8,7 @@ namespace WebAppSample.Controllers
     [Authorize]
     [Route("[controller]")]
     [Route("api/[controller]")]
+    [Route("api/v2/[controller]")]
     [ApiController]
     public class TaskController : ControllerBase
     {
