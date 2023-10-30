@@ -7,7 +7,7 @@ using CSharpBook.OOPS;
 using CSharpBook.SOLID;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Inheritance;
+Problem problem = Problem.LeetCode;
 
 if (problem == Problem.DesignPatterns)
 {
@@ -108,7 +108,7 @@ else if (problem == Problem.Threads)
 }
 else if (problem == Problem.LeetCode)
 {
-    LeetCodeSubProblem subProblem = LeetCodeSubProblem.ArrayString;
+    LeetCodeSubProblem subProblem = LeetCodeSubProblem.Solve;
     if (subProblem == LeetCodeSubProblem.BitManipulation)
     {
         BitManipulation bitManipulation = new BitManipulation();
@@ -117,6 +117,20 @@ else if (problem == Problem.LeetCode)
         bitManipulation.HammingWeight(00000000000000000000000000001011);
     }
     else if (subProblem == LeetCodeSubProblem.ArrayString)
+    {
+        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        mergeSortedArray.Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6, }, 3);
+    }
+    else if (subProblem == LeetCodeSubProblem.Solve)
+    {
+        ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+        // containsDuplicate.ContainsDuplicateValue(new int[] { 1, 2, 3, 1 });
+        // containsDuplicate.IsAnagram("anagram","nagaram");
+
+        // containsDuplicate.TwoSum(new int[] { -1, -2, -3, -4, -5 }, -8);// 3,2,4 - 6  //2,7,11,15  - 9 
+
+        containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
+    }
     {
         MergeSortedArray mergeSortedArray = new MergeSortedArray();
         mergeSortedArray.Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6, }, 3);

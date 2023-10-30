@@ -62,6 +62,8 @@ namespace CSharpBook
             BitManipulation = 1,
             ArrayString = 2,
 
+            Solve =3, 
+
 
         }
     }
