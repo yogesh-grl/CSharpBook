@@ -62,7 +62,7 @@ namespace WebAppSample.Controllers
                     {
                         Subject = new ClaimsIdentity(new[] { new Claim("id", userData.UserName) }),
                         Expires = DateTime.UtcNow.AddDays(7),
-                        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), 
+                        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha512Signature)
                     };
 
