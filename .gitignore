@@ -118,3 +118,8 @@ $RECYCLE.BIN/
 mono_crash.*
 
 WPFSample/obj/Debug/net6.0-windows/WPFSample_f5wsh1xy_wpftmp.AssemblyInfo.cs
+*.dll
+*.cache
+*.pdb
+*.editorconfig
+WPFSample/obj/Debug/net6.0-windows/WPFSample_u1jj1rqn_wpftmp.AssemblyInfo.cs
