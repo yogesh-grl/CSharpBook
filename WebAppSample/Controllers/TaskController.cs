@@ -15,6 +15,7 @@ namespace WebAppSample.Controllers
         #region Get Methods
         //[AllowAnonymous]
         [Route("action")]
+        [Authorize(Policy = "Admin")] // Policy based 
         [HttpGet("GetTaskDetails")]
         public ActionResult<List<TaskModel>> GetTaskDetails()
         {
@@ -57,6 +58,7 @@ namespace WebAppSample.Controllers
 
         #region Post Methods 
 
+        [Authorize(Policy = "RequireAdministratorRole")]
         [HttpPost("PostNewTask")]
         public ActionResult AddNewTask([FromBody] object data)
         {

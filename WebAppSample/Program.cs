@@ -12,6 +12,7 @@ ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddControllersWithViews();
 builder.Services.Configure<AppSetting>(builder.Configuration.GetSection("ApplicationSettings"));
 
+//Authentication Service 
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -27,6 +28,12 @@ builder.Services.AddAuthentication(x =>
         ValidateIssuer = false,
         ValidateAudience = false
     };
+});
+
+//Authorization Service - Policy Based
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy("Admin", p => p.RequireClaim("Role", "Admin"));
 });
 
 

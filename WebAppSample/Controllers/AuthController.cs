@@ -58,11 +58,18 @@ namespace WebAppSample.Controllers
                 {
                     var key = Encoding.ASCII.GetBytes(_applicationSetting.Secret);
                     var tokenHandler = new JwtSecurityTokenHandler();
+
+                    string Role = "Demo";
+                    if (userData.UserName == "Yogesh")
+                    {
+                        Role = "Admin";
+                    }
+
                     var tokenDescriptor = new SecurityTokenDescriptor
                     {
-                        Subject = new ClaimsIdentity(new[] { new Claim("id", userData.UserName) }),
+                        Subject = new ClaimsIdentity(new[] { new Claim("Role", Role) }),
                         Expires = DateTime.UtcNow.AddDays(7),
-                        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), 
+                        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha512Signature)
                     };
 
@@ -89,7 +96,7 @@ namespace WebAppSample.Controllers
             {
                 byte[] PasswordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(pwd));
                 status = PasswordHash.SequenceEqual(user.PasswordHash);
-                
+
             }
             return status;
         }
