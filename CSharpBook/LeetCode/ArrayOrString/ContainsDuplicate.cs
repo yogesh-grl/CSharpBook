@@ -101,5 +101,23 @@ namespace CSharpBook.LeetCode.ArrayOrString
             }
             return retVal;
         }
+
+        public int[] TopKFrequent(int[] nums, int k)
+        {
+            int[] ints = new int[k];
+            int index = 0;
+            var distinctValue = nums.ToList().Distinct();
+            foreach (int val in distinctValue)
+            {
+                List<int> data = nums.ToList().FindAll(x => x == val).ToList();
+                if (data.Count >= k)
+                {
+                    ints[index] = val;
+                    index++;
+                }
+            }
+
+            return ints;
+        }
     }
 }

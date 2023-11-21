@@ -129,7 +129,9 @@ else if (problem == Problem.LeetCode)
 
         // containsDuplicate.TwoSum(new int[] { -1, -2, -3, -4, -5 }, -8);// 3,2,4 - 6  //2,7,11,15  - 9 
 
-        containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
+        //containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
+
+        containsDuplicate.TopKFrequent(new[] { 1, 1, 1, 2, 2, 3 }, 2);//new[] { 1, 1, 2, 2 }, 2
     }
     {
         MergeSortedArray mergeSortedArray = new MergeSortedArray();
