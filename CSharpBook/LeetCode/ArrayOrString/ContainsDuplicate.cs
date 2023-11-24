@@ -104,20 +104,30 @@ namespace CSharpBook.LeetCode.ArrayOrString
 
         public int[] TopKFrequent(int[] nums, int k)
         {
-            int[] ints = new int[k];
-            int index = 0;
-            var distinctValue = nums.ToList().Distinct();
-            foreach (int val in distinctValue)
+            Dictionary<int, int> frequencyMap = new Dictionary<int, int>();
+
+            // Count the frequency of each element
+            foreach (var num in nums)
             {
-                List<int> data = nums.ToList().FindAll(x => x == val).ToList();
-                if (data.Count >= k)
+                if (frequencyMap.ContainsKey(num))
                 {
-                    ints[index] = val;
-                    index++;
+                    frequencyMap[num]++;
+                }
+                else
+                {
+                    frequencyMap[num] = 1;
                 }
             }
 
-            return ints;
+            // Select the k most frequent elements
+            var result = frequencyMap
+                .OrderByDescending(pair => pair.Value)
+                .Take(k)
+                .Select(pair => pair.Key)
+                .ToArray();
+
+            return result;
         }
+
     }
 }
