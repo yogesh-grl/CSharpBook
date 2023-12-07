@@ -1,17 +1,38 @@
 ﻿
 using CSharpBook;
+using CSharpBook.Core;
 using CSharpBook.Design_Patterns;
 using CSharpBook.LeetCode;
 using CSharpBook.LeetCode.ArrayOrString;
 using CSharpBook.OOPS;
 using CSharpBook.SOLID;
+using System.ComponentModel.Design;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.LeetCode;
-
-if (problem == Problem.DesignPatterns)
+Problem problem = Problem.DesignPatterns;
+if (problem == Problem.Core)
 {
-    Singleton singleton = Singleton.GetInstance();
+    CoreSubTopics coreSubTopics = CoreSubTopics.Array;
+    if (coreSubTopics == CoreSubTopics.Array)
+    {
+        ArrayBook arrayBook = new ArrayBook();
+        arrayBook.IterateArray();
+        arrayBook.InsertElementAtPosition(3, 8);
+    }
+}
+else if (problem == Problem.DesignPatterns)
+{
+    DesignPatterns designPatterns = DesignPatterns.Prototype;
+
+    if (designPatterns == DesignPatterns.SingleTon)
+    {
+        Singleton singleton = Singleton.GetInstance();
+    }
+    else if (designPatterns == DesignPatterns.Prototype)
+    {
+        Prototype prototype = new Prototype();
+        prototype.MainMethod();
+    }
 }
 else if (problem == Problem.LINQ)
 {
