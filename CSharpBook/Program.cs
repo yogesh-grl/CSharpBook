@@ -9,7 +9,7 @@ using CSharpBook.SOLID;
 using System.ComponentModel.Design;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.DesignPatterns;
+Problem problem = Problem.Workout;
 if (problem == Problem.Core)
 {
     CoreSubTopics coreSubTopics = CoreSubTopics.Array;
@@ -53,7 +53,9 @@ else if (problem == Problem.LINQ)
 else if (problem == Problem.Workout)
 {
     WorkOut objWorkOut = new WorkOut();
-    objWorkOut.WorkoutSample3();
+    //objWorkOut.WorkoutSample3();
+    string rootPath = @"E:\Source Code\Yogesh\C3BrowserApp_BE\QiDataModelTPT\QI_Development\QITestCasesV_2_0_1\BPP_MPP";
+    objWorkOut.GetDirectoriesAndFiles(rootPath);
 }
 else if (problem == Problem.AbstractClass)
 {

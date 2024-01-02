@@ -72,5 +72,31 @@ namespace CSharpBook
             bool status = work.status;
             int value2 = work.value2;
         }
+
+        public void GetDirectoriesAndFiles(string root)
+        {
+            try
+            {
+                // Retrieve all directories in the current directory
+                string[] directories = Directory.GetDirectories(root);
+
+                // Display all files in the current directory
+                string[] files = Directory.GetFiles(root);
+                foreach (string file in files)
+                {
+                    Console.WriteLine("File: " + file);
+                }
+
+                // Recursively call the method for each directory found
+                foreach (string directory in directories)
+                {
+                    GetDirectoriesAndFiles(directory);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error occurred: " + e.Message);
+            }
+        }
     }
 }
