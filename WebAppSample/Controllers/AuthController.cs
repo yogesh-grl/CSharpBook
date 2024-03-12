@@ -24,10 +24,21 @@ namespace WebAppSample.Controllers
 
         private static List<Users> lsUsers = new List<Users>();
 
+        //https://localhost:7295/api/Auth/Register
+
         [HttpPost("Register")]
+        [ApiVersion("1.0")]
         public IActionResult Register([FromBody] Register registerModel)
         {
-            var user = new Users { UserName = registerModel.UserName };
+            if (!ModelState.IsValid)
+            {
+                //Log the error data in server side 
+            }
+
+            var user = new Users
+            {
+                UserName = registerModel.UserName
+            };
 
             if (registerModel.Password == registerModel.ConfirmationPassword)
             {
@@ -67,7 +78,10 @@ namespace WebAppSample.Controllers
 
                     var tokenDescriptor = new SecurityTokenDescriptor
                     {
-                        Subject = new ClaimsIdentity(new[] { new Claim("Role", Role) }),
+                        Subject = new ClaimsIdentity(new[] {
+                            new Claim("Role", Role),
+                            new Claim(ClaimTypes.Role,"Admin")
+                        }),
                         Expires = DateTime.UtcNow.AddDays(7),
                         SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha512Signature)

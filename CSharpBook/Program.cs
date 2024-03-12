@@ -1,17 +1,38 @@
 ﻿
 using CSharpBook;
+using CSharpBook.Core;
 using CSharpBook.Design_Patterns;
 using CSharpBook.LeetCode;
 using CSharpBook.LeetCode.ArrayOrString;
 using CSharpBook.OOPS;
 using CSharpBook.SOLID;
+using System.ComponentModel.Design;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.LeetCode;
-
-if (problem == Problem.DesignPatterns)
+Problem problem = Problem.Workout;
+if (problem == Problem.Core)
 {
-    Singleton singleton = Singleton.GetInstance();
+    CoreSubTopics coreSubTopics = CoreSubTopics.Array;
+    if (coreSubTopics == CoreSubTopics.Array)
+    {
+        ArrayBook arrayBook = new ArrayBook();
+        arrayBook.IterateArray();
+        arrayBook.InsertElementAtPosition(3, 8);
+    }
+}
+else if (problem == Problem.DesignPatterns)
+{
+    DesignPatterns designPatterns = DesignPatterns.Prototype;
+
+    if (designPatterns == DesignPatterns.SingleTon)
+    {
+        Singleton singleton = Singleton.GetInstance();
+    }
+    else if (designPatterns == DesignPatterns.Prototype)
+    {
+        Prototype prototype = new Prototype();
+        prototype.MainMethod();
+    }
 }
 else if (problem == Problem.LINQ)
 {
@@ -32,7 +53,9 @@ else if (problem == Problem.LINQ)
 else if (problem == Problem.Workout)
 {
     WorkOut objWorkOut = new WorkOut();
-    objWorkOut.WorkoutSample3();
+    //objWorkOut.WorkoutSample3();
+    string rootPath = @"E:\Source Code\Yogesh\C3BrowserApp_BE\QiDataModelTPT\QI_Development\QITestCasesV_2_0_1\BPP_MPP";
+    objWorkOut.GetDirectoriesAndFiles(rootPath);
 }
 else if (problem == Problem.AbstractClass)
 {
@@ -129,7 +152,9 @@ else if (problem == Problem.LeetCode)
 
         // containsDuplicate.TwoSum(new int[] { -1, -2, -3, -4, -5 }, -8);// 3,2,4 - 6  //2,7,11,15  - 9 
 
-        containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
+        //containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
+
+        containsDuplicate.TopKFrequent(new[] { 1, 1, 1, 2, 2, 3 }, 2);//new[] { 1, 1, 2, 2 }, 2
     }
     {
         MergeSortedArray mergeSortedArray = new MergeSortedArray();

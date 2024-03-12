@@ -14,9 +14,9 @@ namespace WebAppSample.Controllers
     {
 
         #region Get Methods
-        //[AllowAnonymous]
         [Route("action")]
         [Authorize(Policy = "Admin")] // Policy based 
+        [Authorize(Roles = "Admin")] // Role based
         [HttpGet("GetTaskDetails")]
         public ActionResult<List<TaskModel>> GetTaskDetails()
         {
@@ -61,6 +61,7 @@ namespace WebAppSample.Controllers
 
         [Authorize(Policy = "RequireAdministratorRole")]
         [HttpPost("PostNewTask")]
+
         public ActionResult AddNewTask([FromBody] object data)
         {
             try
@@ -84,6 +85,7 @@ namespace WebAppSample.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("SamplePost")]
         public ActionResult SamplePost([FromBody] int id)
         {
@@ -92,5 +94,57 @@ namespace WebAppSample.Controllers
 
         #endregion
 
+        #region PUT 
+        [HttpPut("UpdateTask/{TaskId:int}")]
+        public ActionResult UpdateTask(int TaskId, [FromBody] TaskModel updatedTask)
+        {
+            try
+            {
+                TaskModel existingTask = TaskData.lsTaskModels.Find(x => x.TaskID == TaskId);
+                if (existingTask != null)
+                {
+                    // Update the existing task
+                    existingTask.TaskName = updatedTask.TaskName;
+
+                    return Ok(existingTask);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+                throw;
+            }
+        }
+        #endregion
+
+        #region DELETE
+        //[Authorize(Policy = "RequireAdministratorRole")]
+        [HttpDelete("DeleteTask/{TaskId:int}")]
+        public ActionResult DeleteTask(int TaskId)
+        {
+            try
+            {
+                TaskModel taskToDelete = TaskData.lsTaskModels.Find(x => x.TaskID == TaskId);
+                if (taskToDelete != null)
+                {
+                    TaskData.lsTaskModels.Remove(taskToDelete);
+                    return Ok();
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+                throw;
+            }
+        }
+        #endregion 
     }
 }

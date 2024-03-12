@@ -4,6 +4,8 @@ using WebAppSample.Helper.Middleware.TaskMiddleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -35,6 +37,24 @@ builder.Services.AddAuthorization(x =>
 {
     x.AddPolicy("Admin", p => p.RequireClaim("Role", "Admin"));
 });
+
+builder.Services.AddApiVersioning(o =>
+{
+    o.AssumeDefaultVersionWhenUnspecified = true;
+    o.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
+    o.ReportApiVersions = true;
+    o.ApiVersionReader = ApiVersionReader.Combine(
+        new QueryStringApiVersionReader("api-version"),
+        new HeaderApiVersionReader("X-Version"),
+        new MediaTypeApiVersionReader("ver"));
+
+});
+
+builder.Services.AddVersionedApiExplorer(
+    options =>
+    {
+        options.GroupNameFormat = "'v'VVV";
+    });
 
 
 var app = builder.Build();
@@ -72,5 +92,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//Conventional Based Rounting 
+//Version Control 
+//app.MapControllerRoute(
+//    name: "V2",
+//    pattern: "{controller=Home}/v2/{action=Index}/{id?}/");                     
 
 app.Run();

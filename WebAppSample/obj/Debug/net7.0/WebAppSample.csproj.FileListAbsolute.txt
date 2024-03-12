@@ -80,3 +80,6 @@ E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\refint
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSample.pdb
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSample.genruntimeconfig.cache
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\ref\WebAppSample.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSample.MvcApplicationPartsAssemblyInfo.cs

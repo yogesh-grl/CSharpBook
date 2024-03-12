@@ -101,5 +101,33 @@ namespace CSharpBook.LeetCode.ArrayOrString
             }
             return retVal;
         }
+
+        public int[] TopKFrequent(int[] nums, int k)
+        {
+            Dictionary<int, int> frequencyMap = new Dictionary<int, int>();
+
+            // Count the frequency of each element
+            foreach (var num in nums)
+            {
+                if (frequencyMap.ContainsKey(num))
+                {
+                    frequencyMap[num]++;
+                }
+                else
+                {
+                    frequencyMap[num] = 1;
+                }
+            }
+
+            // Select the k most frequent elements
+            var result = frequencyMap
+                .OrderByDescending(pair => pair.Value)
+                .Take(k)
+                .Select(pair => pair.Key)
+                .ToArray();
+
+            return result;
+        }
+
     }
 }

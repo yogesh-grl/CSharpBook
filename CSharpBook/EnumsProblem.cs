@@ -54,7 +54,21 @@ namespace CSharpBook
             DesignPatterns = 12,
             Overloading = 13,
             Threads = 14,
-            LeetCode = 15
+            LeetCode = 15,
+            Core = 16
+        }
+
+        public enum DesignPatterns
+        {
+            //Creational 
+            SingleTon = 1,
+            Prototype = 2,
+            Factory = 3,
+        }
+
+        public enum CoreSubTopics
+        {
+            Array
         }
 
         public enum LeetCodeSubProblem
@@ -62,7 +76,7 @@ namespace CSharpBook
             BitManipulation = 1,
             ArrayString = 2,
 
-            Solve =3, 
+            Solve = 3,
 
 
         }
