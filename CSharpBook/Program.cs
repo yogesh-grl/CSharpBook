@@ -54,8 +54,15 @@ else if (problem == Problem.Workout)
 {
     WorkOut objWorkOut = new WorkOut();
     //objWorkOut.WorkoutSample3();
-    string rootPath = @"E:\Source Code\Yogesh\C3BrowserApp_BE\QiDataModelTPT\QI_Development\QITestCasesV_2_0_1\BPP_MPP";
-    objWorkOut.GetDirectoriesAndFiles(rootPath);
+    //string rootPath = @"E:\Source Code\Yogesh\C3BrowserApp_BE\QiDataModelTPT\QI_Development\QITestCasesV_2_0_1\BPP_MPP";
+    //objWorkOut.GetDirectoriesAndFiles(rootPath);
+
+    //string rootPath1 = @"E:\Projects\Project C3_MPP\Raw data\MPP_Eye_Raw_EYE.bin";//@"C:\GRL\GRL-C3-MP-TPT\SignalFiles\Temp\MPP_Eye_Raw_Chunk_1_EYE.bin";
+    //List<int> lsInt = objWorkOut.FindByteCountsBetweenPattern(rootPath1, new byte[] { 0xFF, 0xFF, 0XFF, 0xFF });
+
+    //objWorkOut.cancellationTokenExample();
+    //objWorkOut.CSVToJSON();
+    objWorkOut.StringExplore();
 }
 else if (problem == Problem.AbstractClass)
 {

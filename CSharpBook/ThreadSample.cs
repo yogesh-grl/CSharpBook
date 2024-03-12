@@ -30,18 +30,25 @@ namespace CSharpBook
             }
         }
 
+        public void Method3(object data)
+        {
+            Console.Write(data);
+        }
+
         public void MainMethod()
         {
             Console.WriteLine($"Main Start");
 
             Thread T1 = new Thread(Method1);
             Thread T2 = new Thread(Method2);
+            Thread T3 = new Thread(Method3);
 
             //T1.Priority = ThreadPriority.Highest;
             T2.IsBackground = true;
 
             T1.Start();
             T2.Start();
+            T3.Start("SampleData");
 
             T1.Join();
             T2.Join();

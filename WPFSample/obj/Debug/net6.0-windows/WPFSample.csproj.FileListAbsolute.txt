@@ -38,3 +38,4 @@ E:\Source Code\Yogesh\Playground\CSharpBook\WPFSample\obj\Debug\net6.0-windows\r
 E:\Source Code\Yogesh\Playground\CSharpBook\WPFSample\obj\Debug\net6.0-windows\WPFSample.pdb
 E:\Source Code\Yogesh\Playground\CSharpBook\WPFSample\obj\Debug\net6.0-windows\WPFSample.genruntimeconfig.cache
 E:\Source Code\Yogesh\Playground\CSharpBook\WPFSample\obj\Debug\net6.0-windows\ref\WPFSample.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\WPFSample\obj\Debug\net6.0-windows\WPFSample.sourcelink.json

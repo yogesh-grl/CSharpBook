@@ -13,9 +13,9 @@ namespace CSharpBook.OOPS
 
         void Sound();
 
-        public void Data()
+        void Data()
         {
-
+            Console.Write("");
         }
 
         virtual void Nature()
