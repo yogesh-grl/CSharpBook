@@ -52,9 +52,10 @@ E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.Gen
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.AssemblyInfoInputs.cache
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.AssemblyInfo.cs
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.csproj.CoreCompileInputs.cache
-E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.csproj.CopyComplete
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.dll
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\refint\MongoDB.dll
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.pdb
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.genruntimeconfig.cache
 E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\ref\MongoDB.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.sourcelink.json
+E:\Source Code\Yogesh\Playground\CSharpBook\MongoDB\obj\Debug\net6.0\MongoDB.csproj.Up2Date

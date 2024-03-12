@@ -11,11 +11,12 @@ namespace MongoDB
     internal class MongoCRUD
     {
         private IMongoDatabase db;
-        string connectionString = "mongodb://localhost:27017";
+        string connectionString = "mongodb+srv://yogeshwaran9397:<09031997E_>@cluster0.h5db6.mongodb.net/?retryWrites=true&w=majority";//"mongodb://localhost:27017";
         public MongoCRUD(string dataBase)
         {
             var client = new MongoClient(connectionString);
             db = client.GetDatabase(dataBase);
+            db = client.GetDatabase("sample_airbnb");
         }
 
         public void InsertRecord<T>(string table, T record)

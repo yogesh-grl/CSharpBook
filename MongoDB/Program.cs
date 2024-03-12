@@ -1,5 +1,7 @@
 ﻿using MongoDB;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
 
 string dataBaseName = "AddressBook";
 MongoCRUD objDB = new MongoCRUD(dataBaseName);
@@ -9,6 +11,13 @@ Person objPerson = new Person
     FirstName = "Yogesh",
     LastName = "Venkat"
 };
+
+var bsonDoc = new BsonDocument()
+{
+    {"ID","MD01" },
+    {"Name","Yogesh" }
+};
+
 
 objDB.InsertRecord("Users", objPerson);
 objDB.LoadRecords<Person>("Users");

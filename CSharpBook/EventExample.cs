@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 
 namespace CSharpBook
 {
-
     public class CustomeArgs : EventArgs
     {
         public bool IsSuccessful = false;
         public string date = null;
     }
-
-
     public class Maths
     {
         //Event without Args 
-        public delegate void SampleDeleagte();        
+        public delegate void SampleDeleagte();
         public event SampleDeleagte SampleEvent;
 
         //Event with Args 
@@ -26,7 +23,7 @@ namespace CSharpBook
         public event SampleDelegateWithArgs SampleEventWithArgs;
 
         // Event with custome Args
-        public delegate void SampleDelegateWithCustomeArgs(CustomeArgs e) ;
+        public delegate void SampleDelegateWithCustomeArgs(CustomeArgs e);
         public event SampleDelegateWithCustomeArgs SampleEventWithCustomeArgs;
 
         public int a { get; set; }
@@ -41,6 +38,7 @@ namespace CSharpBook
 
         public void Addition()
         {
+
             SampleEvent();
 
             SampleEventWithArgs(true);
@@ -66,8 +64,6 @@ namespace CSharpBook
             Console.WriteLine($"Subtraction {a - b}");
         }
     }
-
-
     internal class EventExample
     {
         Maths objMaths;
@@ -75,23 +71,18 @@ namespace CSharpBook
         {
             objMaths = new Maths(2, 1);
         }
-
-
         public void sampleEventAction()
         {
             Console.WriteLine("Event Action");
         }
-
         public void sampleEvenActionWithArgs(bool Status)
         {
             Console.WriteLine($"Event Action {Status}");
         }
-
         public void sampleEvenActionWithCustomeArgs(CustomeArgs e)
         {
             Console.WriteLine($"Event Action {e.IsSuccessful} and {e.date}");
         }
-
         public void MainMethod()
         {
             objMaths.SampleEvent += sampleEventAction;
@@ -102,6 +93,5 @@ namespace CSharpBook
             objMaths.Addition();
             objMaths.Subtraction();
         }
-
     }
 }

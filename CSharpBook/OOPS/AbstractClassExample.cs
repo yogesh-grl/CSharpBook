@@ -21,6 +21,7 @@ namespace CSharpBook.OOPS
         public abstract void Brand();
 
         public abstract void Model();
+      
 
         public virtual void VehicleNumber()
         {
