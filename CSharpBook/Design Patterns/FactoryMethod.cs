@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSharpBook.Design_Patterns
 {
+    #region Product 
     //Product 
     public abstract class Document
     {
         public abstract void DocumentName();
     }
-
 
     // Concrete Product 
     public class TextDocuement : Document
@@ -31,6 +31,9 @@ namespace CSharpBook.Design_Patterns
         }
     }
 
+    #endregion
+
+    #region Creator 
 
     //Creator
     public abstract class DocumentCreator
@@ -56,6 +59,10 @@ namespace CSharpBook.Design_Patterns
         }
     }
 
+    #endregion
+
+    #region Client Class
+
     //Client class
     internal class FactoryMethod
     {
@@ -69,4 +76,6 @@ namespace CSharpBook.Design_Patterns
         }
 
     }
+
+    #endregion
 }
