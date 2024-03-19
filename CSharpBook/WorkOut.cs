@@ -55,6 +55,9 @@ namespace CSharpBook
         {
             int a = 1;
             int count = a.IntegerExtensionMethod();
+
+            double b = 1;
+            double count1 = b.DoubleExtensionMethod();
         }
         /// <summary>
         /// Return type is int but we are returning double
@@ -225,11 +228,11 @@ namespace CSharpBook
         {
             string x = "String1";
             string Y = "String1";
-            if(x.SequenceEqual(Y))
+            if (x.SequenceEqual(Y))
             {
 
             }
-            if(x == Y)
+            if (x == Y)
             {
 
             }
