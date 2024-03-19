@@ -52,7 +52,7 @@ namespace CSharpBook.Design_Patterns
         public AbstractProduct GetProduct(int ID)
         {
             AbstractProduct product = products.Find(x => x.Id == ID);
-            return product ?? ProductNotFound;
+            return product ?? ProductNotFound;//new Product() { Id=-1, Name = "Not Available"};
         }
 
         /// <summary>

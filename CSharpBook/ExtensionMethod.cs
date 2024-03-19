@@ -18,6 +18,12 @@ namespace CSharpBook
             return count;
         }
 
+        public static double DoubleExtensionMethod(this double num)
+        {
+            double count = 0;
+            return count;
+        }
+
         public static string StringExtensionMethod(this string str)
         {
             return str.ToString() + "Extension";
