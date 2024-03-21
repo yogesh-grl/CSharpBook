@@ -124,3 +124,7 @@ WPFSample/obj/Debug/net6.0-windows/WPFSample_f5wsh1xy_wpftmp.AssemblyInfo.cs
 *.editorconfig
 WPFSample/obj/Debug/net6.0-windows/WPFSample_u1jj1rqn_wpftmp.AssemblyInfo.cs
 WPFSample/obj/Debug/net6.0-windows/WPFSample_sulqhnts_wpftmp.AssemblyInfo.cs
+/MongoDB/bin
+/CSharpBook/obj
+/WebAppSample/obj
+/WPFSample/bin
