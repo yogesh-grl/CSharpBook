@@ -83,6 +83,17 @@ namespace CSharpBook.LeetCode.ArrayOrString
             //     return true;
             // return false;
 
+            //int[] disctArray = nums.ToList().Distinct().ToArray();
+            //if (disctArray.Length == nums.Length)
+            //{
+            //    return false;
+            //}
+            //else
+            //{
+            //    return true;
+            //}
+
+
             bool retVal = false;
             for (int i = 0; i <= nums.Length - 1; i++)
             {
@@ -127,6 +138,49 @@ namespace CSharpBook.LeetCode.ArrayOrString
                 .ToArray();
 
             return result;
+        }
+
+        public bool PalindromeNumber(int number)
+        {
+            string strnum = number.ToString();
+            string revString = new string(strnum.Reverse().ToArray());
+            if (strnum == revString)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public string LongestCommonPrefix(string[] strs)
+        {
+            if (strs.Length == 1)
+            {
+                return strs[0];
+            }
+
+            string finalPrefix = "";
+            string currentPrefix = "";
+            for (int i = 0; i < strs[0].Length; i++)
+            {
+                currentPrefix += strs[0][i];
+                for (int j = 1; j < strs.Length; j++)
+                {
+                    string crntStr = strs[j].ToString();
+                    if (crntStr.StartsWith(currentPrefix))
+                    {
+                        // starts with expected prefix
+                    }
+                    else
+                    {
+                        return finalPrefix;                        
+                    }
+                }
+                finalPrefix = currentPrefix;
+            }
+            return finalPrefix;
         }
 
     }
