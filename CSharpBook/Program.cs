@@ -9,7 +9,7 @@ using CSharpBook.SOLID;
 using System.ComponentModel.Design;
 using static CSharpBook.EnumsProblem;
 
-Problem problem = Problem.Workout;
+Problem problem = Problem.LeetCode;
 if (problem == Problem.Core)
 {
     CoreSubTopics coreSubTopics = CoreSubTopics.Array;
@@ -154,14 +154,19 @@ else if (problem == Problem.LeetCode)
     else if (subProblem == LeetCodeSubProblem.Solve)
     {
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-        // containsDuplicate.ContainsDuplicateValue(new int[] { 1, 2, 3, 1 });
-        // containsDuplicate.IsAnagram("anagram","nagaram");
+        //containsDuplicate.ContainsDuplicateValue(new int[] { 1, 2, 3, 1 });
 
-        // containsDuplicate.TwoSum(new int[] { -1, -2, -3, -4, -5 }, -8);// 3,2,4 - 6  //2,7,11,15  - 9 
+        //containsDuplicate.IsAnagram("anagram", "nagaram");
+
+        //containsDuplicate.TwoSum(new int[] { -1, -2, -3, -4, -5 }, -8);// 3,2,4 - 6  //2,7,11,15  - 9 
 
         //containsDuplicate.GroupAnagrams(new[]{""});//(new string[]{"eat","tea","tan","ate","nat","bat"});
 
-        containsDuplicate.TopKFrequent(new[] { 1, 1, 1, 2, 2, 3 }, 2);//new[] { 1, 1, 2, 2 }, 2
+        //containsDuplicate.TopKFrequent(new[] { 1, 1, 1, 2, 2, 3 }, 2);//new[] { 1, 1, 2, 2 }, 2
+
+        //containsDuplicate.PalindromeNumber(-121);
+
+        containsDuplicate.LongestCommonPrefix(new string[] { "flower","flower","flower" });;//"flower", "flow", "flight"
     }
     {
         MergeSortedArray mergeSortedArray = new MergeSortedArray();
