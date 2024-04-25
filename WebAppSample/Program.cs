@@ -6,6 +6,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using WebAppSample.Helper;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -37,6 +39,50 @@ builder.Services.AddAuthorization(x =>
 {
     x.AddPolicy("Admin", p => p.RequireClaim("Role", "Admin"));
 });
+
+
+#region 
+
+//Policy-based Authorization Example:
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+//Custom requirement and handler
+
+//When a user calls the AdultOnly action method,ASP.NET Core's authorization system kicks in.
+//It checks the policies specified in the [Authorize] attribute on the action method.
+//In this case, the policy is "MinimumAgePolicy", which is already configured during application startup.
+//The system then looks for the corresponding authorization handler for this policy.
+//Since MinimumAgeHandler is already registered as a singleton service during startup,
+//it will be used to handle the authorization requirement without being called again during the request to AdultOnly.
+
+//Registering the Requirement in Service 
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy("MinimumAgePolicy", policy =>
+    {
+        policy.Requirements.Add(new MinimumAgeRequirement(18));
+    });
+});
+
+//Registering the Handler in Service 
+builder.Services.AddSingleton<IAuthorizationHandler, MinimumAgeHandler>();
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+
+//Without Custome Requirement and Handler 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("MinimumAgePolicy", policy =>
+    {
+        policy.RequireClaim("Age", "18", "19", "20"); // Specify allowed ages
+    });
+});
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+#endregion
+
 
 builder.Services.AddApiVersioning(o =>
 {
