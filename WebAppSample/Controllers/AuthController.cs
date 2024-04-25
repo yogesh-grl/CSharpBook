@@ -57,6 +57,7 @@ namespace WebAppSample.Controllers
         }
 
         [HttpPost("Login")]
+        [ApiVersion("1.0")]
         public IActionResult Login([FromBody] Login loginModel)
         {
             // Find the user
