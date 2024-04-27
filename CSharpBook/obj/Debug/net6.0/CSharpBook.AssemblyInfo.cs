@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpBook")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dc859cf4d4f6af20c4f693641491a0cdc60dd05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cad3b62497a602d2102b19b14b33699723affe0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpBook")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpBook")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

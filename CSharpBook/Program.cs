@@ -138,7 +138,7 @@ else if (problem == Problem.Threads)
 }
 else if (problem == Problem.LeetCode)
 {
-    LeetCodeSubProblem subProblem = LeetCodeSubProblem.Solve;
+    LeetCodeSubProblem subProblem = LeetCodeSubProblem.ArrayString;
     if (subProblem == LeetCodeSubProblem.BitManipulation)
     {
         BitManipulation bitManipulation = new BitManipulation();

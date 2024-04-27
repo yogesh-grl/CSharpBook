@@ -16,6 +16,16 @@ namespace CSharpBook.LeetCode.ArrayOrString
         {
             try
             {
+                //List<int> lsInt1 = nums1.ToList().GetRange(0, m);
+                //List<int> lsInt2 = nums2.ToList().GetRange(0, n);
+
+
+                //List<int> concatList = (lsInt1.Concat(lsInt2)).ToList();
+                //concatList.Sort();
+                //int[] outputArray = concatList.ToArray();
+
+
+
                 //int[] tmp = nums1.ToList().GetRange(0, m).ToArray();
                 //int[] tmp1 = nums2.ToList().GetRange(0, n).ToArray();
 
