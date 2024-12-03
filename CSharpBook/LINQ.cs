@@ -204,8 +204,14 @@ namespace CSharpBook
                 1,2, 3, 4,
             };
 
+            List<double> lsDouble = new List<double>()
+            {
+                1.0 , 2.0
+,           };
+
             var filterData = lsInt.CustomerFilter(x => x % 2 == 0);
 
+            var filterDoubleData = lsDouble.CustomerFilter(x => x % 2 == 0);
         }
     }
 

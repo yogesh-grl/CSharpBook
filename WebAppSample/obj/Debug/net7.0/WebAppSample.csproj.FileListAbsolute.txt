@@ -84,3 +84,7 @@ E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\bin\Debug\net7.0\Micros
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSample.MvcApplicationPartsAssemblyInfo.cs
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSample.sourcelink.json
 E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\WebAppSa.018DF487.Up2Date
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\bin\Debug\net7.0\WebAppSample.staticwebassets.endpoints.json
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\staticwebassets\msbuild.WebAppSample.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Source Code\Yogesh\Playground\CSharpBook\WebAppSample\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt

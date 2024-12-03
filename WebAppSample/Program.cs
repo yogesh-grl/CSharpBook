@@ -8,6 +8,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using WebAppSample.Helper;
 using Microsoft.AspNetCore.Authorization;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -24,13 +25,13 @@ builder.Services.AddAuthentication(x =>
 }).AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
-    x.SaveToken = true;   
+    x.SaveToken = true;
     x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["ApplicationSettings:Secret"])),
         ValidateIssuer = false,
-        ValidateAudience = false      
+        ValidateAudience = false
     };
 });
 
@@ -105,6 +106,9 @@ builder.Services.AddVersionedApiExplorer(
 
 var app = builder.Build();
 
+app.UseWebSockets();
+app.Map("/ws", ConfigureWebSocket);
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -146,3 +150,19 @@ app.MapControllerRoute(
 //    pattern: "{controller=Home}/v2/{action=Index}/{id?}/");                     
 
 app.Run();
+
+void ConfigureWebSocket(IApplicationBuilder app)
+{
+    app.Use(async (HttpContext context, RequestDelegate next) =>
+    {
+        if (context.WebSockets.IsWebSocketRequest)
+        {
+            await WebSocketHandler.HandleWebSocketRequest(context);
+        }
+        else
+        {
+            context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+        }
+    });
+}
+

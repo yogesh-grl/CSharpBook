@@ -38,7 +38,6 @@ namespace CSharpBook
 
         public void Addition()
         {
-
             SampleEvent();
 
             SampleEventWithArgs(true);

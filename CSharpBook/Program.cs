@@ -1,7 +1,7 @@
 ﻿
 using CSharpBook;
 using CSharpBook.Core;
-using CSharpBook.Design_Patterns;
+using CSharpBook.Design_Patterns.Creational_Design_Pattern;
 using CSharpBook.LeetCode;
 using CSharpBook.LeetCode.ArrayOrString;
 using CSharpBook.OOPS;
@@ -10,6 +10,7 @@ using System.ComponentModel.Design;
 using static CSharpBook.EnumsProblem;
 
 Problem problem = Problem.LeetCode;
+
 if (problem == Problem.Core)
 {
     CoreSubTopics coreSubTopics = CoreSubTopics.Array;
@@ -166,7 +167,7 @@ else if (problem == Problem.LeetCode)
 
         //containsDuplicate.PalindromeNumber(-121);
 
-        containsDuplicate.LongestCommonPrefix(new string[] { "flower","flower","flower" });;//"flower", "flow", "flight"
+        containsDuplicate.LongestCommonPrefix(new string[] { "flower", "flower", "flower" }); ;//"flower", "flow", "flight"
     }
     {
         MergeSortedArray mergeSortedArray = new MergeSortedArray();
