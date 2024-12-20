@@ -1,0 +1,37 @@
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\appsettings.Development.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\appsettings.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.staticwebassets.endpoints.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.exe
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.deps.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.runtimeconfig.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Service 1.pdb
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.csproj.AssemblyReference.cache
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.AssemblyInfoInputs.cache
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.AssemblyInfo.cs
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.csproj.CoreCompileInputs.cache
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.MvcApplicationPartsAssemblyInfo.cs
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.MvcApplicationPartsAssemblyInfo.cache
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.sourcelink.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\scopedcss\bundle\Service 1.styles.css
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets.build.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets.development.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets\msbuild.Service 1.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets\msbuild.Service 1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets\msbuild.build.Service 1.props
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Service 1.props
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Service 1.props
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.csproj.Up2Date
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\refint\Service 1.dll
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.pdb
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\Service 1.genruntimeconfig.cache
+E:\Source Code\Yogesh\Playground\CSharpBook\C# Docker Sample\New folder\Service 1\obj\Debug\net8.0\ref\Service 1.dll

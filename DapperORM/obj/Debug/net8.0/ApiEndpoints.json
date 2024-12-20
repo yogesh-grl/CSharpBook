@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "DapperORM.Controllers.ProductCatelog",
+    "Method": "GetProductCatalog",
+    "RelativePath": "Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

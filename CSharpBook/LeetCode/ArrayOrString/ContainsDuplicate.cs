@@ -175,7 +175,7 @@ namespace CSharpBook.LeetCode.ArrayOrString
                     }
                     else
                     {
-                        return finalPrefix;                        
+                        return finalPrefix;
                     }
                 }
                 finalPrefix = currentPrefix;

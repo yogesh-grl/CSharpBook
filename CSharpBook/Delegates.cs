@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpBook
 {
+    //Del Declaration 
+    //Del Init 
+    //Binding method to Del 
+    //Invoke Del 
 
     #region Delegate without Param
     public class Calculation

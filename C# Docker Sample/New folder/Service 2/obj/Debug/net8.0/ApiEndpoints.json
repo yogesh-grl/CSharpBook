@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "Service_2.Controllers.Service2Controller",
+    "Method": "Service2",
+    "RelativePath": "Service2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
