@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/api/service1",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Service2",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5241
+        }
+      ],
+      "UpstreamPathTemplate": "/api/service2",
+      "UpstreamHttpMethod": [ "GET" ]
     }
   ],
   "GlobalConfiguration": {

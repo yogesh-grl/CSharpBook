@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\C# Docker Sample\\New folder\\ApiGateway\\ApiGateway.csproj": {}
+    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\Microservice Architecture using C#\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\C# Docker Sample\\New folder\\ApiGateway\\ApiGateway.csproj": {
+    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\Microservice Architecture using C#\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\C# Docker Sample\\New folder\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\Microservice Architecture using C#\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\C# Docker Sample\\New folder\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\Microservice Architecture using C#\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\Yogesh\\.nuget\\packages\\",
-        "outputPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\C# Docker Sample\\New folder\\ApiGateway\\obj\\",
+        "outputPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\Microservice Architecture using C#\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,7 +42,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
