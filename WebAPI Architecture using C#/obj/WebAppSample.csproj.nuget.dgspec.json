@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAppSample\\WebAppSample.csproj": {}
+    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAPI Architecture using C#\\WebAppSample.csproj": {}
   },
   "projects": {
-    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAppSample\\WebAppSample.csproj": {
+    "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAPI Architecture using C#\\WebAppSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAppSample\\WebAppSample.csproj",
+        "projectUniqueName": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAPI Architecture using C#\\WebAppSample.csproj",
         "projectName": "WebAppSample",
-        "projectPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAppSample\\WebAppSample.csproj",
+        "projectPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAPI Architecture using C#\\WebAppSample.csproj",
         "packagesPath": "C:\\Users\\Yogesh\\.nuget\\packages\\",
-        "outputPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAppSample\\obj\\",
+        "outputPath": "E:\\Source Code\\Yogesh\\Playground\\CSharpBook\\WebAPI Architecture using C#\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Yogesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -72,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
